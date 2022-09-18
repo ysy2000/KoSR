@@ -30,7 +30,7 @@ def load_config(filename):
   CONFIG.add_hparam('ALLOW_SOFT_PLACEMENT', True)
   CONFIG.add_hparam('LOG_DEVICE_PLACEMENT', False)
   CONFIG.add_hparam('DATA_TYPE', None)
-  CONFIG.add_hparam('DATA_DIR', None)
+  CONFIG.add_hparam('DATA_DIR', type=str, default="/home/ysy/data/")
   CONFIG.add_hparam('DATA_SEED', None)
   CONFIG.add_hparam('DATA_ARGS', {})
   CONFIG.add_hparam('BATCH_SIZE', 128)
